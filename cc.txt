@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+	int c;
+	scanf("%d",&c);
+	int a,b,cnt = 0;
+	for(int i=1;i<=c;i++)
+	{
+		if(c % i == 0)
+		{
+			a = i;
+			b = c / i;
+			if(a==b)
+			cnt++;
+			else
+			cnt+=2;
+		printf("%d",cnt);
+		}
+	}
+	
+   return 0;
+}
